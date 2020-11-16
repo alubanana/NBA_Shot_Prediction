@@ -33,6 +33,18 @@ This session will illustrate relationship between pairs or small numbers of attr
 
 The Box Plot illustrates the relationship between the height of players and their positions in teams. Intuitively, players with center positions, who are normally the last line of defense in an offensive attempt, needs to be the tallest. Similarly, players who are point guards usually are ball-handler and requires a relatively smaller physique to agilely move around in the field.
 
+![](/images/plot1.png)
+
+#### Distribution Plot
+
+Figure 2 is a distribution plot of the shot-distance, from which a pattern can be clearly observed. Most of the shots made were concentrated to areas close to the basket or close to the three-point line (7.24 m). This makes intuitive sense because players either want to maximize probability of making the shot by being close to the basket or trying to maximize their points by trying outside the three-point line.
+
+!(/images/plot2.png)
+
+#### The Violin Plot
+
+Above is the violin plot that illustrates the relationship between shot distance and shot results of different positions.
+
 
 
 

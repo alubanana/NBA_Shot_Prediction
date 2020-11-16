@@ -8,4 +8,4 @@ In building our models, our data mining goal is to find the best model that has 
 
 ## Impact on Stakeholders and Potential Benefits
 
-[Impact Table](/images/table1.png")
+![Impact on Stakeholders](/images/table1.png)

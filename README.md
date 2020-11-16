@@ -80,16 +80,16 @@ The feature selection model developed by William is based on five selection stan
 
 We already performed the data cleaning process by replacing the missing value with league’s average data. Also, as each shot’s attribute is quite different, we do not have variables that only have single unique value. These two features is shown in Figure 5. Thus we have 0 variable being excluded by the first and second standard.
 
-![](/images/feature1.png)
-![](/images/feature2.png)
+<img src="/images/feature1.png" width="500">  <img src="/images/feature2.png" width="500">
+
 
 As two highly correlated variables would overshadow the effect of the other one, therefore we only need to keep one of them and deleting the others. Similar to the heat map used in the previous selection method, but William’s model provides the threshold of correlation and could exclude the variables whose correlation is above the set threshold. Here we set the correlation upper limit to be 0.6, which means we delete the features whose correlation is higher than 0.6. Figure 6 demonstrates the correlation of all variables included and those whose correlation is higher than 0.6. In this step, we delete all 24 variables (Table 3) that have the correlation above the threshold. Figure 7 is an example of the correlation value and which variable to keep or remove.
 
 ![](/images/table4.png)
 
-![](/images/cor1.png)
-![](/images/cor2.png)
-![](/images/table5.png)
+<img src="/images/cor1.png" width="500"> <img src="/images/cor2.png" width="500">
+
+<img src="/images/table5.png" width="500">
 
 The fourth and fifth selection criteria are built on a supervised machine learning model, which remove the variables according to their estimated importance level using a gradient boosting machine in the LightGBM library. In these two steps, we remove features with zero importance and those variables that do not account for 95% of accumulative importance. The gradient boosting training process is shown below in Figure 8. After the modeling we find out that all variables are with positive importance level, and 36 variables required for 0.95 of cumulative importance. Table 4 demonstrates the 12 variables with highest importance, as well as how do those 36 variables accumulate to account for 0.95 importance. The remaining variables are '3P_off', 'PERIOD', 'TOV_off', 'Height_off', '2PA_off', 'FGA_off', 'PTS_off', '3PA_off', ‘HOME’ and they are excluded — they only have relatively little contribution to predict the shot result.
 

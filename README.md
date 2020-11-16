@@ -80,8 +80,9 @@ The feature selection model developed by William is based on five selection stan
 
 We already performed the data cleaning process by replacing the missing value with league’s average data. Also, as each shot’s attribute is quite different, we do not have variables that only have single unique value. These two features is shown in Figure 5. Thus we have 0 variable being excluded by the first and second standard.
 
-![](/images/feature1.png) { width: 200px; }
-![](/images/feature2.png) { width: 200px; }
+![](/images/feature1.png)
+<img src="/images/feature1.pngg" width="200">
+![](/images/feature2.png) 
 
 As two highly correlated variables would overshadow the effect of the other one, therefore we only need to keep one of them and deleting the others. Similar to the heat map used in the previous selection method, but William’s model provides the threshold of correlation and could exclude the variables whose correlation is above the set threshold. Here we set the correlation upper limit to be 0.6, which means we delete the features whose correlation is higher than 0.6. Figure 6 demonstrates the correlation of all variables included and those whose correlation is higher than 0.6. In this step, we delete all 24 variables (Table 3) that have the correlation above the threshold. Figure 7 is an example of the correlation value and which variable to keep or remove.
 

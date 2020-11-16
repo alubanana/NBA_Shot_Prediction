@@ -8,4 +8,5 @@ In building our models, our data mining goal is to find the best model that has 
 
 ## Impact on Stakeholders and Potential Benefits
 
-<img src="https://github.com/alubanana/NBA_Shot_Prediction/edit/master/images/table1.png" alt="table1">
+[Impact Table](/images/table1.png")
+Format: ![Alt Text](url)
